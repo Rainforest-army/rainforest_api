@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: wallets
+#
+#  id              :bigint           not null, primary key
+#  company_id      :bigint           not null
+#  lnbits_id       :string           not null
+#  lnbits_adminkey :string
+#  invoice_key     :string
+#  profit          :integer
+#  loss            :integer
+#  chain           :integer          default(0), not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+one:
+  address: MyString
+  company: one
+  profit_in_sats: 1
+  loss_in_sats: 1
+
+two:
+  address: MyString
+  company: two
+  profit_in_sats: 1
+  loss_in_sats: 1

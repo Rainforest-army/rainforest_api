@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: companies
+#
+#  id                       :bigint           not null, primary key
+#  name                     :string
+#  lnbits_user_id           :string
+#  auth_token               :string
+#  paid_invoice_webhook_url :string
+#  created_at               :datetime         not null
+#  updated_at               :datetime         not null
+#
+
+one:
+  name: MyString
+  auth_token: MyString
+
+two:
+  name: MyString
+  auth_token: MyString

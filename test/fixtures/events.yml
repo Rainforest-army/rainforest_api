@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: events
+#
+#  id            :bigint           not null, primary key
+#  wallet_id     :bigint           not null
+#  is_incoming   :boolean
+#  category      :integer
+#  amount        :integer
+#  event_address :string
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+one:
+  wallet: one
+  is_incoming: false
+  category: 1
+  amount: 1
+  event_address: MyString
+
+two:
+  wallet: two
+  is_incoming: false
+  category: 1
+  amount: 1
+  event_address: MyString
